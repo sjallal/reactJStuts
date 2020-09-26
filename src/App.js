@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import IntervalHookCounter from "./HookComponents/IntervalHookCounter";
+import DataFetching from "./HookComponents/DataFetching";
+// import UseEffectCondn from "./HookComponents/UseEffectCondn";
+// import UseEffectMouse from "./HookComponents/UseEffectMouse";
+// import CompWillUnmountUseState from "./HookComponents/CompWillUnmountUseState";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataFetching />
+      {/* <CompWillUnmountUseState /> */}
+      {/* <UseEffectCondn /> */}
+      {/* <UseEffectMouse /> */}
+      {/* <IntervalHookCounter /> */}
     </div>
   );
 }
